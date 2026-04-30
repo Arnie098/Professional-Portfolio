@@ -1,0 +1,32 @@
+.contact-section {
+  background-color: var(--color-surface);
+}
+
+.contact-section .form-control {
+  background-color: var(--color-surface-soft);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+}
+
+.contact-section .form-control::placeholder {
+  color: var(--color-muted);
+}
+
+.contact-section .btn-info {
+  border-radius: 999px;
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.85rem 1.1rem;
+}
+
+.contact-section .social-icons a {
+  transition: transform 0.3s ease;
+}
+
+.contact-section .social-icons a:hover {
+  transform: scale(1.2);
+}

@@ -1,0 +1,190 @@
+.experience-section {
+  background:
+    radial-gradient(circle at top right, color-mix(in srgb, var(--color-accent) 12%, transparent), transparent 32%),
+    linear-gradient(180deg, var(--color-surface) 0%, var(--color-surface-soft) 100%);
+  color: var(--color-text);
+  padding: 88px 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.experience-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.experience-header {
+  max-width: 720px;
+  margin: 0 auto 56px;
+  text-align: center;
+}
+
+.experience-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.experience-title {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: var(--color-heading);
+  letter-spacing: -0.03em;
+}
+
+.experience-intro {
+  margin: 16px 0 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+}
+
+.experience-list {
+  position: relative;
+  display: grid;
+  gap: 28px;
+}
+
+.experience-list::before {
+  content: "";
+  position: absolute;
+  left: 22px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-accent-soft), var(--color-border));
+}
+
+.experience-item {
+  position: relative;
+  padding-left: 64px;
+}
+
+.experience-marker {
+  position: absolute;
+  left: 14px;
+  top: 26px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-accent);
+  border-radius: 50%;
+  border: 3px solid var(--color-surface);
+  box-shadow: 0 0 0 6px var(--color-accent-soft);
+}
+
+.experience-card {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-surface-elevated) 88%, transparent),
+    var(--color-surface)
+  );
+  border: 1px solid var(--color-border);
+  border-radius: 22px;
+  padding: 24px 26px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--color-accent) 30%, var(--color-border));
+  box-shadow: 0 24px 46px var(--color-shadow-strong);
+}
+
+.experience-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.experience-role {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 0.8rem;
+  margin-bottom: 12px;
+  border-radius: 999px;
+  background-color: var(--color-accent-soft);
+  color: var(--color-accent-dark);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.job-title {
+  margin: 0;
+  font-size: 1.24rem;
+  font-weight: 700;
+  color: var(--color-heading);
+}
+
+.project-label {
+  margin: 0 0 16px;
+  color: var(--color-muted);
+  font-size: 0.96rem;
+  font-weight: 500;
+}
+
+.date {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--color-surface-soft) 90%, transparent);
+  border: 1px solid var(--color-border);
+  color: var(--color-muted-strong);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.responsibilities {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--color-text);
+  line-height: 1.75;
+}
+
+.responsibilities li {
+  margin-bottom: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 72px 16px;
+  }
+
+  .experience-header {
+    margin-bottom: 40px;
+  }
+
+  .experience-item {
+    padding-left: 52px;
+  }
+
+  .experience-list::before {
+    left: 18px;
+  }
+
+  .experience-marker {
+    left: 10px;
+  }
+
+  .experience-card {
+    padding: 20px 18px;
+  }
+
+  .experience-card-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-title {
+    font-size: 1.08rem;
+  }
+}
