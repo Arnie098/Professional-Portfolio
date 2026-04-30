@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Header from "./assets/components/header";
+import Header from "./assets/components/Header";
 import Info from "./assets/components/Info";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
