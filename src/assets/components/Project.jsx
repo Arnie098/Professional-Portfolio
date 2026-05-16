@@ -129,7 +129,14 @@ const Project = () => {
   return (
     <section id="projects" className="project-section py-5">
       <div className="container">
-        <h2 className="text-center mb-5">Selected Projects</h2>
+        <div className="project-header">
+          <p className="project-eyebrow">What I've Built</p>
+          <h2 className="project-title">Selected Projects</h2>
+          <p className="project-intro">
+            Production systems I've designed and developed — from payment platforms to
+            logistics dashboards and AI-powered tools.
+          </p>
+        </div>
         <div className="row">
           {[...projects].reverse().map((project, index) => (
             <div className="col-md-4 col-sm-6 mb-4" key={index}>

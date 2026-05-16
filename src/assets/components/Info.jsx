@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export default function Info() {
   const TypingHighlight = () => {
-    const texts = ["Hi, I'm Arnie", "Future Full-Stack Developer"];
+    const texts = ["Hi, I'm Arnie", "Backend Developer", "Full Stack Engineer"];
     const [displayedText, setDisplayedText] = useState("");
     const [textIndex, setTextIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
@@ -61,18 +61,17 @@ export default function Info() {
             <h1 className="display-4 fw-bold">
               <TypingHighlight />
             </h1>
-            <h2 className="info-subtitle">BSIT 3C</h2>
+            <h2 className="info-subtitle">Backend Developer & Full Stack Engineer</h2>
             <hr className="info-divider" />
             <p className="info-summary fs-5">
-              Information Technology student focused on backend development,
-              modern web applications, API integrations, and practical software
-              delivery.
+              I build backend systems, payment integrations, and full-stack web
+              applications. Focused on clean architecture, reliable APIs, and
+              shipping products that work.
             </p>
-            <h4 className="info-goal">
-              Goal after graduation: become a reliable full-stack engineer who
-              builds useful systems with strong technical standards and
-              professionalism.
-            </h4>
+            <div className="info-cta">
+              <a href="#projects" className="btn btn-primary info-btn">View My Work</a>
+              <a href="#contact" className="btn btn-outline info-btn-outline">Get In Touch</a>
+            </div>
           </motion.div>
 
           <motion.div

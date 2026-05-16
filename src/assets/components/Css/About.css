@@ -1,14 +1,36 @@
 .about-section {
   background-color: var(--color-surface);
   color: var(--color-text);
-  padding: 60px 0;
+  padding: 88px 0;
 }
 
-.about-section h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
+.about-header-centered {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.about-eyebrow {
+  margin: 0 0 10px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+}
+
+.about-title {
+  margin: 0;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
   color: var(--color-heading);
-  margin-bottom: 30px;
+  letter-spacing: -0.03em;
+}
+
+.about-bio {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-muted);
+  margin-bottom: 12px;
 }
 
 .about-info {
@@ -34,15 +56,10 @@
   color: var(--color-text);
 }
 
-.counter-wrap .fs-3 {
-  font-size: 2.2rem;
-  color: var(--color-accent-dark);
-  font-weight: bold;
-}
-
-.counter-wrap span {
-  display: block;
-  font-size: 1rem;
+.about-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .btn.btn-primary {
@@ -64,6 +81,24 @@
   box-shadow: 0 16px 36px rgba(30, 58, 138, 0.28);
 }
 
+.btn-outline-about {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  background: transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-outline-about:hover {
+  background: var(--color-accent);
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .about-image-frame {
   width: min(100%, 360px);
   margin: 0 auto;
@@ -83,12 +118,11 @@
     flex-direction: column-reverse;
   }
 
-  .about-section h2 {
-    font-size: 2rem;
+  .about-section {
+    padding: 60px 0;
   }
 
-  .counter-wrap {
+  .about-actions {
     justify-content: center;
-    text-align: center;
   }
 }

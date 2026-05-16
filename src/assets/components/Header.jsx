@@ -4,14 +4,14 @@ import "./Css/Header.css";
 export default function Header() {
   return (
     <motion.nav
-      className="navbar navbar-expand-lg bg-body-black custom-navbar"
-      initial={{ opacity: 0, y: -50 }}
+      className="navbar navbar-expand-lg custom-navbar"
+      initial={{ opacity: 0, y: -30 }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.6, ease: "easeOut" }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Arnians
+          Arnie<span className="brand-accent">.dev</span>
         </a>
         <button
           className="navbar-toggler"
@@ -27,23 +27,13 @@ export default function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
               <a className="nav-link" href="#home">
-                Info
+                Home
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#about">
                 About
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#education">
-                Education
               </a>
             </li>
             <li className="nav-item">
@@ -62,7 +52,7 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#footer">
+              <a className="nav-link" href="#contact">
                 Contact
               </a>
             </li>

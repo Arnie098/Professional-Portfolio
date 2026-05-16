@@ -31,11 +31,18 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section py-5">
       <div className="container">
-        <h2 className="text-center mb-4">Contact Me</h2>
+        <div className="contact-header">
+          <p className="contact-eyebrow">Let's Connect</p>
+          <h2 className="contact-title">Get In Touch</h2>
+          <p className="contact-intro">
+            Have a project in mind or want to collaborate? Send me a message and
+            I'll get back to you as soon as possible.
+          </p>
+        </div>
 
         <div className="row justify-content-center">
           <div className="col-md-8">
-            <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail} className="contact-form">
               <div className="mb-3">
                 <label htmlFor="name" className="form-label">
                   Name
@@ -73,19 +80,19 @@ const Contact = () => {
                   className="form-control"
                   id="message"
                   rows="5"
-                  placeholder="Your message"
+                  placeholder="Tell me about your project or idea..."
                   required
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-info w-100">
+              <button type="submit" className="btn btn-contact w-100">
                 Send Message
               </button>
             </form>
 
             {sent && (
               <div className="alert alert-success mt-3" role="alert">
-                Message sent successfully!
+                Message sent successfully! I'll get back to you soon.
               </div>
             )}
           </div>

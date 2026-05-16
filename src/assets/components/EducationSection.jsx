@@ -8,9 +8,9 @@ const educationData = [
     institution: "Davao del Sur State College",
     date: "2022 - Present",
     details: [
-      "Current 3rd Year student",
-      "Programming enthusiast with backend development focus",
+      "3rd Year student specializing in backend systems and software engineering",
       "Capstone: NCIP Management System with Blockchain Technology",
+      "Coursework in data structures, database systems, web development, and cloud computing",
     ],
   },
   {
@@ -18,21 +18,10 @@ const educationData = [
     degree: "Technical Vocational Livelihood Strand",
     institution: "Digos City National High School",
     date: "2019 - 2021",
-    details: ["Graduated with honors"],
-  },
-  {
-    level: "Junior High School",
-    degree: "High School Diploma",
-    institution: "Digos City National High School",
-    date: "2013 - 2019",
-    details: ["Graduated with honors", "Participated in extracurricular activities"],
-  },
-  {
-    level: "Elementary",
-    degree: "Elementary Education",
-    institution: "Digos City Central Elementary School",
-    date: "2007 - 2013",
-    details: ["Most Behaved Student Award", "Graduated with honors"],
+    details: [
+      "Graduated with honors",
+      "Early exposure to programming and computer systems",
+    ],
   },
 ];
 

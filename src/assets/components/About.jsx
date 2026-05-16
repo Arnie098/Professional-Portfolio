@@ -6,7 +6,10 @@ const About = () => {
   return (
     <section id="about" className="about-section py-5">
       <div className="container">
-        <h2 className="text-center mb-5">About Me</h2>
+        <div className="about-header-centered">
+          <p className="about-eyebrow">Who I Am</p>
+          <h2 className="about-title">About Me</h2>
+        </div>
         <div className="row align-items-center">
           <div className="col-lg-5 mb-4 mb-lg-0 text-center">
             <div className="about-image-frame">
@@ -18,45 +21,42 @@ const About = () => {
             </div>
           </div>
           <div className="col-lg-7">
-            <p>
-              Adaptable and solution-oriented developer with a strong interest in
-              backend engineering, practical system design, and continuous
-              technical growth.
+            <p className="about-bio">
+              I'm a backend-focused developer who ships production systems — from payment
+              platforms handling real transactions to logistics dashboards tracking live
+              deliveries. I care about clean architecture, well-documented APIs, and
+              writing code that other developers can maintain.
+            </p>
+            <p className="about-bio">
+              My approach is practical: understand the problem, build the solution, deploy
+              it reliably, and iterate. I've worked across .NET, Node.js, FastAPI, and
+              React, and I'm comfortable owning features end-to-end.
             </p>
             <ul className="about-info mt-4 px-md-0 px-2">
               <li className="d-flex">
-                <span>Name:</span> <span>Arnieque Amaba</span>
-              </li>
-              <li className="d-flex">
-                <span>Date of birth:</span> <span>July 30, 2004</span>
-              </li>
-              <li className="d-flex">
-                <span>Address:</span> <span>Philippines</span>
-              </li>
-              <li className="d-flex">
-                <span>Zip code:</span> <span>8002</span>
+                <span>Location:</span> <span>Digos City, Philippines</span>
               </li>
               <li className="d-flex">
                 <span>Email:</span> <span>kikoy12345amaba@gmail.com</span>
               </li>
               <li className="d-flex">
-                <span>Phone:</span> <span>+63 9916694076</span>
+                <span>Focus:</span> <span>Backend Engineering & Full Stack Development</span>
+              </li>
+              <li className="d-flex">
+                <span>Available:</span> <span>Open to freelance & collaboration</span>
               </li>
             </ul>
-            <div className="counter-wrap d-flex mt-4">
-              <div className="text">
-                <p className="mb-2 fs-3">10+</p>
-                <span>Projects Completed</span>
-                <p className="mt-3">
-                  <a
-                    href="/ArniePortFolioResume.docx"
-                    className="btn btn-primary"
-                    download
-                  >
-                    Download My Resume
-                  </a>
-                </p>
-              </div>
+            <div className="about-actions mt-4">
+              <a
+                href="/ArniePortFolioResume.docx"
+                className="btn btn-primary"
+                download
+              >
+                Download Resume
+              </a>
+              <a href="#contact" className="btn btn-outline-about">
+                Let's Talk
+              </a>
             </div>
           </div>
         </div>

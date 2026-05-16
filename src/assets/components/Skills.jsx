@@ -7,41 +7,41 @@ const skillGroups = [
     title: "Frontend",
     description: "Building responsive interfaces and component-driven user experiences.",
     skills: [
-      { name: "HTML", color: "#e34c26", icon: "fab fa-html5", progress: 25 },
-      { name: "CSS", color: "#264de4", icon: "fab fa-css3-alt", progress: 25 },
-      { name: "JavaScript", color: "#f0db4f", icon: "fab fa-js-square", progress: 25 },
-      { name: "React", color: "#61dafb", icon: "fab fa-react", progress: 50 },
-      { name: "React Native", color: "#00d8ff", icon: "fab fa-react", progress: 50 },
-      { name: "Bootstrap", color: "#7952b3", icon: "fab fa-bootstrap", progress: 25 },
+      { name: "HTML", color: "#e34c26", icon: "fab fa-html5", progress: 70 },
+      { name: "CSS", color: "#264de4", icon: "fab fa-css3-alt", progress: 65 },
+      { name: "JavaScript", color: "#f0db4f", icon: "fab fa-js-square", progress: 70 },
+      { name: "React", color: "#61dafb", icon: "fab fa-react", progress: 75 },
+      { name: "React Native", color: "#00d8ff", icon: "fab fa-react", progress: 60 },
+      { name: "Bootstrap", color: "#7952b3", icon: "fab fa-bootstrap", progress: 70 },
     ],
   },
   {
     title: "Backend & Cloud",
     description: "Designing APIs, deployments, infrastructure, and system integrations.",
     skills: [
-      { name: ".NET", color: "#512bd4", icon: "fas fa-code", progress: 75 },
-      { name: "Java", color: "#f89820", icon: "fab fa-java", progress: 50 },
-      { name: "FastAPI", color: "#009688", icon: "fas fa-bolt", progress: 30 },
-      { name: "Docker", color: "#0db7ed", icon: "fab fa-docker", progress: 50 },
-      { name: "Azure", color: "#0089d6", icon: "fas fa-cloud", progress: 50 },
-      { name: "Google Cloud", color: "#ea4335", icon: "fas fa-cloud", progress: 50 },
-      { name: "Node.js / Express", color: "#68a063", icon: "fab fa-node-js", progress: 50 },
-      { name: "CI/CD Pipeline", color: "#34d058", icon: "fas fa-cogs", progress: 50 },
+      { name: ".NET", color: "#512bd4", icon: "fas fa-code", progress: 85 },
+      { name: "Java", color: "#f89820", icon: "fab fa-java", progress: 65 },
+      { name: "FastAPI", color: "#009688", icon: "fas fa-bolt", progress: 70 },
+      { name: "Docker", color: "#0db7ed", icon: "fab fa-docker", progress: 65 },
+      { name: "Azure", color: "#0089d6", icon: "fas fa-cloud", progress: 60 },
+      { name: "Google Cloud", color: "#ea4335", icon: "fas fa-cloud", progress: 55 },
+      { name: "Node.js / Express", color: "#68a063", icon: "fab fa-node-js", progress: 75 },
+      { name: "CI/CD Pipeline", color: "#34d058", icon: "fas fa-cogs", progress: 60 },
     ],
   },
   {
     title: "Data & Tools",
     description: "Working with databases, version control, automation, and supporting tools.",
     skills: [
-      { name: "Git", color: "#f1502f", icon: "fab fa-git-alt", progress: 50 },
-      { name: "GitHub", color: "#111827", icon: "fab fa-github", progress: 50 },
-      { name: "SQLite", color: "#003b57", icon: "fas fa-database", progress: 50 },
-      { name: "MySQL", color: "#00758f", icon: "fas fa-database", progress: 50 },
-      { name: "SSMS", color: "#ff6c00", icon: "fas fa-server", progress: 50 },
-      { name: "Unit Testing", color: "#ffcc00", icon: "fas fa-vial", progress: 20 },
-      { name: "Supabase", color: "#3ecf8e", icon: "fas fa-database", progress: 40 },
-      { name: "n8n", color: "#ff6f61", icon: "fas fa-project-diagram", progress: 30 },
-      { name: "GraphQL", color: "#e535ab", icon: "fas fa-share-alt", progress: 30 },
+      { name: "Git", color: "#f1502f", icon: "fab fa-git-alt", progress: 80 },
+      { name: "GitHub", color: "#111827", icon: "fab fa-github", progress: 80 },
+      { name: "SQLite", color: "#003b57", icon: "fas fa-database", progress: 70 },
+      { name: "MySQL", color: "#00758f", icon: "fas fa-database", progress: 75 },
+      { name: "SSMS", color: "#ff6c00", icon: "fas fa-server", progress: 70 },
+      { name: "Unit Testing", color: "#ffcc00", icon: "fas fa-vial", progress: 50 },
+      { name: "Supabase", color: "#3ecf8e", icon: "fas fa-database", progress: 60 },
+      { name: "n8n", color: "#ff6f61", icon: "fas fa-project-diagram", progress: 55 },
+      { name: "GraphQL", color: "#e535ab", icon: "fas fa-share-alt", progress: 50 },
     ],
   },
 ];
@@ -107,7 +107,9 @@ const Skills = () => {
 
                     <div className="progress-container">
                       <div className="progress-label-row">
-                        <p className="progress-label">Current proficiency</p>
+                        <p className="progress-label">
+                          {skill.progress >= 80 ? "Advanced" : skill.progress >= 60 ? "Proficient" : skill.progress >= 40 ? "Intermediate" : "Familiar"}
+                        </p>
                       </div>
                       <div className="progress">
                         <div

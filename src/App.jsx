@@ -7,7 +7,6 @@ import "./App.css";
 import Skills from "./assets/components/Skills";
 import Contact from "./assets/components/Contact";
 import Footer from "./assets/components/Footer";
-import QuoteCard from "./assets/components/qoute";
 import Project from "./assets/components/Project";
 import About from "./assets/components/About";
 import EducationSection from "./assets/components/EducationSection";
@@ -28,12 +27,11 @@ function App() {
         <Info />
       </div>
       <About />
-      <EducationSection />
       <ExperienceSection />
       <Project />
       <Skills />
+      <EducationSection />
       <Contact />
-      <QuoteCard />
       <Footer />
     </div>
   );
