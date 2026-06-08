@@ -8,11 +8,8 @@ body,
 }
 
 body {
-  background:
-    radial-gradient(circle at top, var(--color-page-top), transparent 34%),
-    linear-gradient(180deg, var(--color-page-start) 0%, var(--color-page-end) 100%);
+  background-color: var(--color-bg);
   color: var(--color-text);
-  transition: background 0.3s ease, color 0.3s ease;
 }
 
 .app-container {
@@ -31,19 +28,6 @@ header {
   padding: 1rem;
 }
 
-.fade-in {
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeIn 0.5s ease-out forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 br {
   display: none;
 }
@@ -53,11 +37,10 @@ br {
   top: 0;
   z-index: 1000;
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 0.9rem 1.5rem;
   background: var(--color-header-bg);
-  backdrop-filter: blur(16px);
+  backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--color-header-border);
-  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
 }
 
 .header > * {

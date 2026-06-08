@@ -1,10 +1,6 @@
 import React from "react";
 import "./Css/Project.css";
 import flickIcon from "../images/Flick/FlickIcon.png";
-import Face1 from "../images/FaceRecognition/Screenshot final 1.png";
-import Face2 from "../images/FaceRecognition/Screenshot final2.png";
-import Face3 from "../images/FaceRecognition/Screenshot final3.png";
-import Face4 from "../images/FaceRecognition/Screenshot final 4.png";
 import Bible1 from "../images/BibleDesktopApp/Image1.png";
 import Bible2 from "../images/BibleDesktopApp/Image2.png";
 import flickImg1 from "../images/Flick/1.jpg";
@@ -69,17 +65,10 @@ const projects = [
     images: [Bible1, Bible2],
   },
   {
-    title: "FaceAttendance",
-    description:
-      "An AI-powered web attendance system that uses facial recognition to simplify attendance tracking. Built with React on the frontend and FastAPI on the backend, it emphasizes usability, efficiency, and accuracy.",
-    stack: "React, FastAPI, Facial Recognition",
-    images: [Face1, Face2, Face3, Face4],
-  },
-  {
     title: "GatewayHub",
     description:
       "A web-based payment operations platform for managing gateways, API credentials, transaction monitoring, payment creation, exports, and developer documentation from a single dashboard.",
-    stack: "Payments, Coins.ph API, Webhooks, Merchant APIs",
+    stack: "Laravel 12, Livewire/Flux, Fortify, Socialite, endroid/qr-code, Tailwind CSS, MySQL, Coins.ph API",
     images: [
       gatewayhubLanding,
       gatewayhubLogin,
@@ -95,7 +84,7 @@ const projects = [
     title: "Suretrack",
     description:
       "A delivery and logistics dashboard focused on order tracking, Ninja Van operations, COD monitoring, reports, product specifications, and webhook-based delivery updates.",
-    stack: "Full Stack, Ninja Van API, Webhooks, Logistics Dashboard",
+    stack: "Laravel 12, Livewire/Flux, Fortify, Socialite (Google OAuth), Tailwind CSS, MySQL, Ninja Van API",
     images: [
       suretrackLanding,
       suretrackLogin,
@@ -108,10 +97,10 @@ const projects = [
     link: "https://suretrack.spcardealer.com",
   },
   {
-    title: "NCIP System",
+    title: "NCIP — Hybrid Blockchain + ABAC System",
     description:
-      "An internal records and case management platform with modules for IP census, document registry, IPMR tracking, FPIC workflows, audit logs, and administrative documentation.",
-    stack: "Case Management, Records System, Administrative Modules",
+      "An internal records and case management platform powered by a hybrid blockchain for tamper-evident records, secured with an Attribute-Based Access Control (ABAC) framework for fine-grained, policy-driven permissions. Includes modules for IP census, document registry, IPMR tracking, FPIC workflows, audit logs, and administrative documentation.",
+    stack: "Laravel 12, Inertia.js, React + TypeScript, Tailwind CSS, Solidity/Hardhat, ethers.js, Leaflet, MySQL",
     images: [
       ncipLanding,
       ncipModules,
@@ -122,6 +111,15 @@ const projects = [
       ncipFpic,
       ncipAudit,
     ],
+    status: "Internal System",
+  },
+  {
+    title: "DocuTrust",
+    description:
+      "A document e-signature and notarization platform built on Laravel 12, anchoring completed document hashes to the Polygon blockchain for tamper-proof verification. Includes queue-based PDF sealing, certificate generation, two-factor authentication, and e-invoicing.",
+    stack: "Laravel 12, Livewire, Solidity/Hardhat (Polygon), Node.js/ethers.js, Redis, MySQL, dompdf/FPDI",
+    images: [],
+    link: "https://sign.docutrust.tech",
   },
 ];
 
@@ -141,10 +139,10 @@ const Project = () => {
           {[...projects].reverse().map((project, index) => (
             <div className="col-md-4 col-sm-6 mb-4" key={index}>
               <div className="card h-100 project-card">
+                {project.images.length > 0 ? (
                 <div
                   id={`carousel-${index}`}
                   className="carousel slide"
-                  data-bs-ride="carousel"
                 >
                   <div className="carousel-inner">
                     {project.images.map((img, imgIndex) => (
@@ -162,6 +160,7 @@ const Project = () => {
                             src={img}
                             className="d-block w-100 project-image"
                             alt={`${project.title} screenshot ${imgIndex + 1}`}
+                            loading="lazy"
                           />
                         </a>
                       </div>
@@ -197,6 +196,18 @@ const Project = () => {
                     </>
                   )}
                 </div>
+                ) : (
+                  <div
+                    className="project-image-placeholder d-flex align-items-center justify-content-center"
+                    style={{
+                      minHeight: "200px",
+                      background: "var(--color-surface-soft)",
+                      color: "var(--color-muted)",
+                    }}
+                  >
+                    Screenshots coming soon
+                  </div>
+                )}
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
@@ -211,7 +222,7 @@ const Project = () => {
                       View Project
                     </a>
                   ) : (
-                    <span className="project-status mt-auto">Not Yet Deployed</span>
+                    <span className="project-status mt-auto">{project.status || "In Development"}</span>
                   )}
                 </div>
               </div>

@@ -20,6 +20,7 @@ const skillGroups = [
     description: "Designing APIs, deployments, infrastructure, and system integrations.",
     skills: [
       { name: ".NET", color: "#512bd4", icon: "fas fa-code", progress: 85 },
+      { name: "Laravel", color: "#FF2D20", icon: "fab fa-laravel", progress: 75 },
       { name: "Java", color: "#f89820", icon: "fab fa-java", progress: 65 },
       { name: "FastAPI", color: "#009688", icon: "fas fa-bolt", progress: 70 },
       { name: "Docker", color: "#0db7ed", icon: "fab fa-docker", progress: 65 },
@@ -47,9 +48,9 @@ const skillGroups = [
 ];
 
 const stats = [
-  { label: "Core Technologies", value: "20+" },
-  { label: "Backend Focus", value: "API & Systems" },
-  { label: "Tooling Style", value: "Practical" },
+  { label: "Projects Built", value: "6" },
+  { label: "Live Platforms", value: "2" },
+  { label: "Work Experiences", value: "3" },
 ];
 
 const Skills = () => {
@@ -87,36 +88,14 @@ const Skills = () => {
               <div className="skills-grid">
                 {group.skills.map((skill) => (
                   <div key={skill.name} className="skill-card">
-                    <div className="skill-card-top">
-                      <span
-                        className="skill-icon-shell"
-                        style={{
-                          backgroundColor: `${skill.color}1a`,
-                          borderColor: `${skill.color}33`,
-                        }}
-                      >
-                        <i
-                          className={`${skill.icon} skill-icon`}
-                          style={{ color: skill.color }}
-                        ></i>
+                    <span className="skill-icon-shell">
+                      <i className={`${skill.icon} skill-icon`}></i>
+                    </span>
+                    <div>
+                      <h5 className="skill-name">{skill.name}</h5>
+                      <span className="skill-tier">
+                        {skill.progress >= 80 ? "Advanced" : skill.progress >= 60 ? "Proficient" : skill.progress >= 40 ? "Intermediate" : "Familiar"}
                       </span>
-                      <span className="skill-percent">{skill.progress}%</span>
-                    </div>
-
-                    <h5 className="skill-name">{skill.name}</h5>
-
-                    <div className="progress-container">
-                      <div className="progress-label-row">
-                        <p className="progress-label">
-                          {skill.progress >= 80 ? "Advanced" : skill.progress >= 60 ? "Proficient" : skill.progress >= 40 ? "Intermediate" : "Familiar"}
-                        </p>
-                      </div>
-                      <div className="progress">
-                        <div
-                          className="progress-bar"
-                          style={{ width: `${skill.progress}%` }}
-                        />
-                      </div>
                     </div>
                   </div>
                 ))}

@@ -1,29 +1,30 @@
 .contact-section {
-  background-color: var(--color-surface);
-  padding: 88px 0;
+  background-color: var(--color-bg);
+  padding: 96px 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .contact-header {
   text-align: center;
   max-width: 600px;
-  margin: 0 auto 48px;
+  margin: 0 auto 40px;
 }
 
 .contact-eyebrow {
   margin: 0 0 10px;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.78rem;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-muted);
 }
 
 .contact-title {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--color-heading);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .contact-intro {
@@ -34,35 +35,33 @@
 }
 
 .contact-form {
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--color-surface-elevated) 88%, transparent),
-    var(--color-surface)
-  );
+  background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 22px;
-  padding: 36px;
-  box-shadow: var(--shadow-soft);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: none;
 }
 
 .contact-section .form-label {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-heading);
-  font-size: 0.92rem;
+  font-size: 0.9rem;
 }
 
 .contact-section .form-control {
   background-color: var(--color-surface-soft);
   color: var(--color-text);
   border: 1px solid var(--color-border);
-  border-radius: 14px;
-  padding: 0.85rem 1rem;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: var(--radius-sm);
+  padding: 0.8rem 1rem;
+  transition: border-color 0.2s ease;
 }
 
 .contact-section .form-control:focus {
+  background-color: var(--color-surface-soft);
+  color: var(--color-text);
   border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px var(--color-accent-soft);
+  box-shadow: none;
 }
 
 .contact-section .form-control::placeholder {
@@ -70,26 +69,25 @@
 }
 
 .btn-contact {
-  border-radius: 999px;
-  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
-  border: none;
-  color: #ffffff;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  color: #0c0d10;
   font-weight: 600;
-  padding: 0.85rem 1.1rem;
-  font-size: 1rem;
-  transition: all 0.3s ease;
+  padding: 0.8rem 1.1rem;
+  font-size: 0.95rem;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .btn-contact:hover {
-  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
-  transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(29, 78, 216, 0.24);
-  color: #ffffff;
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: #0c0d10;
 }
 
 @media (max-width: 768px) {
   .contact-section {
-    padding: 60px 0;
+    padding: 64px 0;
   }
 
   .contact-form {

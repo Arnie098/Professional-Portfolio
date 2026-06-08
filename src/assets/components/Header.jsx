@@ -1,14 +1,8 @@
-import { motion } from "framer-motion";
 import "./Css/Header.css";
 
 export default function Header() {
   return (
-    <motion.nav
-      className="navbar navbar-expand-lg custom-navbar"
-      initial={{ opacity: 0, y: -30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
-    >
+    <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           Arnie<span className="brand-accent">.dev</span>
@@ -59,6 +53,6 @@ export default function Header() {
           </ul>
         </div>
       </div>
-    </motion.nav>
+    </nav>
   );
 }

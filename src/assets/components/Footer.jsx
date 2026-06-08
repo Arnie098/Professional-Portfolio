@@ -12,6 +12,9 @@ const Footer = () => {
           <a href="https://github.com/Arnie098" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
             <i className="fab fa-github"></i>
           </a>
+          <a href="https://www.linkedin.com/in/arnie-que-amaba-9383b2284/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i className="fab fa-linkedin-in"></i>
+          </a>
           <a href="https://www.instagram.com/arniequeamaba/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <i className="fab fa-instagram"></i>
           </a>

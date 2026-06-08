@@ -1,12 +1,49 @@
-# React + Vite
+# Arnieque Amaba — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A single-page personal portfolio for **Arnieque Amaba**, a Backend / Full-Stack Developer.
+Built with React and Vite, showcasing projects, experience, skills, and a contact form.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **Vite 7** (JavaScript / JSX)
+- **Bootstrap 5.3** for layout, plus per-component CSS in `src/assets/components/Css/`
+- **Framer Motion** for animations
+- **Font Awesome** for icons
+- **EmailJS** for the contact form
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install      # install dependencies
+npm run dev      # start the dev server (http://localhost:5173)
+npm run build    # production build to dist/
+npm run preview  # preview the production build
+npm run lint     # run ESLint
+```
+
+## Project Structure
+
+```
+index.html                     # entry HTML (theme set via data-theme="dark")
+src/
+  main.jsx                      # React root
+  App.jsx                       # composes the page sections
+  index.css                     # global styles + light/dark theme variables
+  App.css                       # app-level layout
+  assets/
+    components/                 # section components (Header, Info, About,
+      Css/                      #   ExperienceSection, Project, Skills, etc.)
+    images/                     # project screenshots
+public/
+  ArniePortFolioResume.docx     # downloadable resume (linked from About)
+```
+
+The page renders a linear set of sections: Header → Info → About → Experience →
+Projects → Skills → Education → Contact → Footer.
+
+## Configuration
+
+The contact form uses EmailJS. The service ID, template ID, and public key are
+configured in `src/assets/components/Contact.jsx`. The EmailJS public key is safe
+to expose client-side; restrict allowed domains in the EmailJS dashboard for a
+public deployment.

@@ -17,6 +17,7 @@ const About = () => {
                 src={myImage}
                 className="about-profile-image"
                 alt="Arnieque Amaba"
+                loading="lazy"
               />
             </div>
           </div>

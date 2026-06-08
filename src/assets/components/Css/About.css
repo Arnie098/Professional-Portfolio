@@ -1,7 +1,8 @@
 .about-section {
-  background-color: var(--color-surface);
+  background-color: var(--color-bg);
   color: var(--color-text);
-  padding: 88px 0;
+  padding: 96px 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .about-header-centered {
@@ -11,44 +12,46 @@
 
 .about-eyebrow {
   margin: 0 0 10px;
-  font-size: 0.82rem;
-  font-weight: 700;
+  font-size: 0.78rem;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-muted);
 }
 
 .about-title {
   margin: 0;
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(1.9rem, 4vw, 2.5rem);
   font-weight: 700;
   color: var(--color-heading);
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
 }
 
 .about-bio {
-  font-size: 1.05rem;
+  font-size: 1rem;
   line-height: 1.8;
   color: var(--color-muted);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .about-info {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 24px 0 0;
+  border-top: 1px solid var(--color-border);
 }
 
 .about-info li {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
-  font-size: 1rem;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
 }
 
 .about-info span:first-child {
   min-width: 130px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--color-muted);
 }
 
@@ -58,49 +61,47 @@
 
 .about-actions {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
 .btn.btn-primary {
-  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
-  border: none;
-  padding: 12px 28px;
-  border-radius: 30px;
+  background: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  padding: 11px 24px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
-  font-size: 1rem;
-  color: #ffffff;
-  box-shadow: 0 12px 28px rgba(29, 78, 216, 0.24);
-  transition: all 0.3s ease;
+  font-size: 0.95rem;
+  color: #0c0d10;
+  box-shadow: none;
+  transition: background 0.2s ease, border-color 0.2s ease;
 }
 
 .btn.btn-primary:hover {
-  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(30, 58, 138, 0.28);
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  color: #0c0d10;
 }
 
 .btn-outline-about {
-  padding: 12px 28px;
-  border-radius: 30px;
+  padding: 11px 24px;
+  border-radius: var(--radius-sm);
   font-weight: 600;
-  font-size: 1rem;
-  color: var(--color-accent);
-  border: 2px solid var(--color-accent);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
   background: transparent;
-  transition: all 0.3s ease;
+  transition: border-color 0.2s ease, color 0.2s ease;
   text-decoration: none;
 }
 
 .btn-outline-about:hover {
-  background: var(--color-accent);
-  color: #ffffff;
-  transform: translateY(-2px);
+  border-color: var(--color-accent);
+  color: var(--color-heading);
 }
 
 .about-image-frame {
-  width: min(100%, 360px);
+  width: min(100%, 340px);
   margin: 0 auto;
 }
 
@@ -108,9 +109,9 @@
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: var(--radius);
   object-fit: cover;
-  box-shadow: 0 20px 44px rgba(15, 23, 42, 0.12);
+  border: 1px solid var(--color-border);
 }
 
 @media (max-width: 767.98px) {
@@ -119,7 +120,7 @@
   }
 
   .about-section {
-    padding: 60px 0;
+    padding: 64px 0;
   }
 
   .about-actions {
