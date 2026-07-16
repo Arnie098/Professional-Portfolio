@@ -1,0 +1,79 @@
+# Arnieque O. Amaba
+
+**Full Stack Laravel Developer**
+
+Digos City, Davao del Sur, Philippines  
++63 991 669 4076 | kikoy12345amaba@gmail.com  
+Portfolio: https://professional-portfolio-1-c4ev.onrender.com  
+GitHub: https://github.com/Arnie098 | LinkedIn: https://linkedin.com/in/arnie-que-amaba-9383b2284  
+Live Laravel apps: https://gatewayhub.io | https://sign.docutrust.tech | https://suretrack.spcardealer.com
+
+## Professional Summary
+
+Full Stack Laravel Developer with production experience shipping multi-tenant web apps for payments, logistics, and document workflows. Builds end-to-end features in Laravel 12 (Livewire, Eloquent, queues, Fortify auth), MySQL, and Tailwind — from REST/webhook APIs to admin dashboards and cloud deploys. Strong in payment integrations, idempotent APIs, Redis jobs, and CI/CD on DigitalOcean. Seeking a full-time Full Stack Laravel Developer role.
+
+## Technical Skills
+
+- **Laravel Stack:** Laravel 12, PHP 8, Livewire/Flux, Eloquent ORM, Blade, Inertia.js, Fortify, Socialite, Queues, Events, Policies, Form Requests
+- **Full Stack:** REST APIs, Webhooks, MySQL, Redis, Tailwind CSS, Bootstrap, Alpine.js, React, JavaScript/TypeScript, JWT, 2FA
+- **Integrations:** Coins.ph payments, Ninja Van logistics, merchant APIs, QR payments, PDF generation (dompdf/FPDI), email/notifications
+- **DevOps:** Git, GitHub Actions CI/CD, Docker, Nginx, PHP-FPM, systemd, DigitalOcean, Hostinger, Azure
+- **Also:** Node.js, FastAPI, React Native, SQL Server, Swagger/OpenAPI, Solidity/Hardhat (Polygon)
+
+## Professional Experience
+
+### Full Stack Laravel Developer — DocuTrust
+
+E-Signature & Notarization Platform · Freelance / Remote | May 2026 – Present | Live: sign.docutrust.tech
+
+- Built full-stack e-signature and notarization product in Laravel 12 + Livewire: document upload, drag-and-drop signature fields, PDF stamping/sealing, and certificate generation.
+- Modeled domain data with Eloquent (documents, signers, certificates, e-invoices) and secured flows with Fortify auth, JWT, and Google 2FA.
+- Implemented Redis-backed Laravel queues for PDF processing, notifications, and e-invoicing so long-running jobs stay reliable under load.
+- Designed idempotent Laravel API endpoints with idempotency keys so document and invoice actions are safe to retry without duplicates.
+- Shipped GitHub Actions CI/CD with zero-downtime releases to DigitalOcean (Nginx, PHP-FPM, systemd queue workers).
+- Added optional Polygon hash-anchoring via a Node.js sidecar for tamper-evident document verification after signing completes.
+
+### Full Stack Laravel Developer — GatewayHub
+
+Payment Operations Platform · Freelance / Remote | Feb 2026 – Present | Live: gatewayhub.io
+
+- Developed Laravel payment ops dashboard: gateway management, API keys, transaction monitoring, exports, and developer docs in one place.
+- Integrated Coins.ph and merchant APIs with Livewire UI + REST endpoints, including dynamic QR payment generation for production use.
+- Implemented idempotent payment APIs and webhook controllers to prevent duplicate charges when payment gateways retry events.
+- Authored merchant-facing API documentation and exposed clean Laravel routes/resources so partners can integrate independently.
+- Deployed and maintained the app on DigitalOcean (domains, env config, Nginx) and resolved production payment/debug issues end-to-end.
+
+### Full Stack Laravel Developer — Suretrack
+
+Logistics & Delivery Dashboard · Freelance / Remote | Jan 2026 – Mar 2026 | Live: suretrack.spcardealer.com
+
+- Built Laravel 12 + Livewire logistics dashboard for orders, delivery tracking, COD monitoring, product specs, and operational reports.
+- Integrated Ninja Van APIs and Laravel webhook handlers for real-time delivery status; made handlers idempotent for safe retries.
+- Added Google OAuth (Socialite/Fortify) and full-stack notification flows; deployed the application on Hostinger with domain setup.
+
+## Selected Projects
+
+### NCIP — Hybrid Blockchain + ABAC Management System (Capstone · Laravel)
+
+Internal records and case platform (IP census, document registry, IPMR, FPIC, audit logs) with ABAC permissions and tamper-evident record hashes.
+
+Tech: Laravel 12, Inertia.js, React, TypeScript, Tailwind CSS, MySQL, Solidity/Hardhat, ethers.js, Leaflet
+
+### Flick — QR Code Attendance
+
+Cross-platform QR attendance with offline mobile storage and a Dockerized FastAPI backend on Azure for auth and email verification.
+
+Tech: React Native, SQLite, FastAPI, Docker, Azure
+
+## Education
+
+### B.S. Information Technology
+
+Davao del Sur State College | 2022 – Present
+
+- Focus: web development, databases, and software engineering; building production Laravel apps alongside coursework
+- Capstone: NCIP Hybrid Blockchain-Powered Management System (Laravel + ABAC security framework)
+
+## Languages
+
+Filipino (Native) · English (Professional working proficiency)

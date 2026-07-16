@@ -14,13 +14,13 @@ export default function Info() {
               Hi, I'm <span className="highlight">Arnie</span>
             </h1>
             <h2 className="info-subtitle">
-              Backend Developer &amp; Full Stack Engineer
+              Full Stack Laravel Developer
             </h2>
             <hr className="info-divider" />
             <p className="info-summary fs-5">
-              I build backend systems, payment integrations, and full-stack web
-              applications. Focused on clean architecture, reliable APIs, and
-              shipping products that work.
+              I build production Laravel apps end-to-end — Livewire dashboards,
+              REST and webhook APIs, payment and logistics integrations, and
+              cloud deploys. Clean architecture, reliable code, products that ship.
             </p>
             <div className="info-cta">
               <a href="#projects" className="btn btn-primary info-btn">View My Work</a>

@@ -35,8 +35,9 @@ const Contact = () => {
           <p className="contact-eyebrow">Let's Connect</p>
           <h2 className="contact-title">Get In Touch</h2>
           <p className="contact-intro">
-            Have a project in mind or want to collaborate? Send me a message and
-            I'll get back to you as soon as possible.
+            Hiring a Full Stack Laravel Developer, or have a project in mind?
+            Send a message — I&apos;m open to full-time roles and will get back
+            to you as soon as possible.
           </p>
         </div>
 

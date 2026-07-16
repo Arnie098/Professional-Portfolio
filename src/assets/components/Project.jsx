@@ -131,8 +131,8 @@ const Project = () => {
           <p className="project-eyebrow">What I've Built</p>
           <h2 className="project-title">Selected Projects</h2>
           <p className="project-intro">
-            Production systems I've designed and developed — from payment platforms to
-            logistics dashboards and AI-powered tools.
+            Production Laravel systems I&apos;ve designed and developed — payment
+            platforms, logistics dashboards, e-signature workflows, and more.
           </p>
         </div>
         <div className="row">

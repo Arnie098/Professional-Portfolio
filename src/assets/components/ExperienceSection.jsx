@@ -3,52 +3,49 @@ import "./Css/ExperienceSection.css";
 
 const experienceData = [
   {
-    title: "Backend Developer",
+    title: "Full Stack Laravel Developer",
     company: "DocuTrust",
     project: "Document e-Signature Platform",
     description:
-      "A document e-signature and notarization platform built on Laravel 12, anchoring completed document hashes to the Polygon blockchain for tamper-proof verification. Includes queue-based PDF sealing, certificate generation, two-factor authentication, and e-invoicing.",
+      "A document e-signature and notarization platform built on Laravel 12 + Livewire, with PDF sealing, certificate generation, Redis queues, two-factor authentication, and optional Polygon hash anchoring for tamper-proof verification.",
     date: "May 2026 - Present",
     responsibilities: [
-      "Built document e-signature and notarization workflows on Laravel 12 with Livewire, including PDF stamping, sealing, and certificate generation.",
-      "Built a custom drag-and-drop signature field builder, letting users place signature, initial, date, and text fields onto documents for e-signing.",
-      "Integrated Polygon blockchain anchoring through a Node.js (ethers.js) sidecar and a Hardhat-deployed DocumentNotary smart contract for tamper-proof document verification.",
-      "Designed Redis-backed queue lanes (documents, notifications, e-invoices) to reliably process long-running PDF and notification jobs.",
-      "Implemented two-factor authentication (Google2FA), JWT, and e-invoicing integrations.",
-      "Implemented idempotent API endpoints with idempotency keys so document and e-invoice operations are safe to retry without duplication.",
-      "Set up CI/CD with GitHub Actions and zero-downtime release deployment to a DigitalOcean droplet (Nginx, PHP-FPM, systemd workers).",
+      "Built full-stack e-signature and notarization workflows on Laravel 12 with Livewire, including PDF stamping, sealing, and certificate generation.",
+      "Built a custom drag-and-drop signature field builder for signature, initial, date, and text placement on documents.",
+      "Modeled domain data with Eloquent and secured flows with Fortify auth, JWT, and Google 2FA.",
+      "Designed Redis-backed Laravel queue lanes (documents, notifications, e-invoices) for long-running PDF and notification jobs.",
+      "Implemented idempotent Laravel API endpoints with idempotency keys so document and e-invoice operations are safe to retry.",
+      "Set up GitHub Actions CI/CD with zero-downtime deploys to DigitalOcean (Nginx, PHP-FPM, systemd workers).",
+      "Integrated optional Polygon hash anchoring via a Node.js (ethers.js) sidecar for tamper-evident verification.",
     ],
   },
   {
-    title: "Backend Developer",
-    company: "Gatewayhub Company",
-    project: "GatewayHub",
+    title: "Full Stack Laravel Developer",
+    company: "GatewayHub",
+    project: "Payment Operations Platform",
     description:
-      "A web-based payment operations platform for managing gateways, API credentials, transaction monitoring, payment creation, exports, and developer documentation from a single dashboard.",
+      "A Laravel payment operations platform for managing gateways, API credentials, transaction monitoring, payment creation, exports, and developer documentation from a single dashboard.",
     date: "Feb 2026 - Present",
     responsibilities: [
-      "Implemented the Coins.ph API, payment webhooks, and dynamic QR code generation for secure payment processing.",
-      "Implemented idempotent payment APIs and webhook handling using idempotency keys to prevent duplicate transactions on retries.",
-      "Integrated merchant APIs for seamless payment processing and transaction management.",
-      "Wrote documentation for API endpoints and integration processes to support clear stakeholder communication.",
-      "Exposed merchant-facing API endpoints for platform users.",
-      "Performed code debugging and analysis to improve performance and reliability.",
-      "Deployed VPS infrastructure on DigitalOcean and managed the domain.",
+      "Developed the Livewire payment ops dashboard and integrated Coins.ph APIs, payment webhooks, and dynamic QR code generation.",
+      "Implemented idempotent payment APIs and webhook handling with idempotency keys to prevent duplicate transactions on retries.",
+      "Integrated merchant APIs and exposed merchant-facing Laravel REST endpoints for platform users.",
+      "Wrote API documentation so partners can integrate without hand-holding.",
+      "Deployed and maintained VPS infrastructure on DigitalOcean and resolved production payment issues end-to-end.",
     ],
   },
   {
-    title: "Full Stack Developer",
-    company: "Suretrack Company",
-    project: "Suretrack",
+    title: "Full Stack Laravel Developer",
+    company: "Suretrack",
+    project: "Logistics & Delivery Dashboard",
     description:
-      "A delivery and logistics dashboard focused on order tracking, Ninja Van operations, COD monitoring, reports, product specifications, and webhook-based delivery updates.",
+      "A Laravel 12 + Livewire logistics dashboard for order tracking, Ninja Van operations, COD monitoring, reports, product specifications, and webhook-based delivery updates.",
     date: "January 2026 - March 2026",
     responsibilities: [
-      "Implemented Ninja Van API integration and webhook handling for real-time logistics tracking and delivery updates.",
-      "Implemented idempotent API endpoints and webhook handlers so retried delivery and order updates are processed exactly once.",
-      "Developed frontend and backend features for order management, delivery tracking, and notifications.",
+      "Built full-stack order management, delivery tracking, and notification features with Laravel 12, Livewire, and Tailwind CSS.",
+      "Integrated Ninja Van APIs and Laravel webhook handlers for real-time logistics updates; made handlers idempotent for safe retries.",
+      "Added Google OAuth (Socialite/Fortify) for authentication.",
       "Deployed the web application on Hostinger and managed the domain.",
-      "Supported quality assurance and code reviews to maintain coding standards.",
     ],
   },
 ];
@@ -61,9 +58,9 @@ const ExperienceSection = () => {
           <p className="experience-eyebrow">Professional Work</p>
           <h2 className="experience-title">Experience</h2>
           <p className="experience-intro">
-            Practical experience across backend systems, full stack product
-            development, AI-assisted workflows, logistics integrations, and
-            payment platforms.
+            Production Full Stack Laravel work across payments, logistics, and
+            document workflows — from Eloquent models and webhooks to Livewire
+            UIs and cloud deploys.
           </p>
         </div>
 

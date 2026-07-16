@@ -23,15 +23,16 @@ const About = () => {
           </div>
           <div className="col-lg-7">
             <p className="about-bio">
-              I'm a backend-focused developer who ships production systems — from payment
-              platforms handling real transactions to logistics dashboards tracking live
-              deliveries. I care about clean architecture, well-documented APIs, and
-              writing code that other developers can maintain.
+              I&apos;m a Full Stack Laravel Developer who ships production systems —
+              payment platforms handling real transactions, logistics dashboards with
+              live tracking, and document e-signature workflows. I care about clean
+              architecture, well-documented APIs, and code other developers can maintain.
             </p>
             <p className="about-bio">
-              My approach is practical: understand the problem, build the solution, deploy
-              it reliably, and iterate. I've worked across .NET, Node.js, FastAPI, and
-              React, and I'm comfortable owning features end-to-end.
+              My approach is practical: understand the problem, build the solution in
+              Laravel (Livewire, Eloquent, queues), deploy it reliably, and iterate.
+              I own features end-to-end — from MySQL models and REST/webhooks to
+              Tailwind UIs and DigitalOcean deploys.
             </p>
             <ul className="about-info mt-4 px-md-0 px-2">
               <li className="d-flex">
@@ -41,10 +42,10 @@ const About = () => {
                 <span>Email:</span> <span>kikoy12345amaba@gmail.com</span>
               </li>
               <li className="d-flex">
-                <span>Focus:</span> <span>Backend Engineering & Full Stack Development</span>
+                <span>Focus:</span> <span>Full Stack Laravel (PHP · Livewire · MySQL)</span>
               </li>
               <li className="d-flex">
-                <span>Available:</span> <span>Open to freelance & collaboration</span>
+                <span>Available:</span> <span>Open to full-time Laravel roles</span>
               </li>
             </ul>
             <div className="about-actions mt-4">

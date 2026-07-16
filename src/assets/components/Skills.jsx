@@ -4,52 +4,50 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 
 const skillGroups = [
   {
+    title: "Laravel Stack",
+    description: "End-to-end Laravel apps: APIs, Livewire UIs, queues, and auth.",
+    skills: [
+      { name: "Laravel", color: "#FF2D20", icon: "fab fa-laravel", progress: 85 },
+      { name: "PHP", color: "#777BB4", icon: "fab fa-php", progress: 85 },
+      { name: "Livewire", color: "#FB70A9", icon: "fas fa-bolt", progress: 80 },
+      { name: "Eloquent / MySQL", color: "#00758f", icon: "fas fa-database", progress: 80 },
+      { name: "REST & Webhooks", color: "#0ea5e9", icon: "fas fa-exchange-alt", progress: 80 },
+      { name: "Redis Queues", color: "#DC382D", icon: "fas fa-layer-group", progress: 75 },
+      { name: "Fortify / Socialite", color: "#FF2D20", icon: "fas fa-shield-alt", progress: 75 },
+      { name: "Inertia.js", color: "#9553E9", icon: "fas fa-code", progress: 70 },
+    ],
+  },
+  {
     title: "Frontend",
-    description: "Building responsive interfaces and component-driven user experiences.",
+    description: "Dashboards and UIs that pair with Laravel backends.",
     skills: [
-      { name: "HTML", color: "#e34c26", icon: "fab fa-html5", progress: 70 },
-      { name: "CSS", color: "#264de4", icon: "fab fa-css3-alt", progress: 65 },
-      { name: "JavaScript", color: "#f0db4f", icon: "fab fa-js-square", progress: 70 },
+      { name: "Tailwind CSS", color: "#38bdf8", icon: "fas fa-wind", progress: 75 },
+      { name: "JavaScript", color: "#f0db4f", icon: "fab fa-js-square", progress: 75 },
       { name: "React", color: "#61dafb", icon: "fab fa-react", progress: 75 },
-      { name: "React Native", color: "#00d8ff", icon: "fab fa-react", progress: 60 },
       { name: "Bootstrap", color: "#7952b3", icon: "fab fa-bootstrap", progress: 70 },
+      { name: "HTML / CSS", color: "#e34c26", icon: "fab fa-html5", progress: 70 },
+      { name: "React Native", color: "#00d8ff", icon: "fab fa-react", progress: 60 },
     ],
   },
   {
-    title: "Backend & Cloud",
-    description: "Designing APIs, deployments, infrastructure, and system integrations.",
+    title: "DevOps & More",
+    description: "Deploys, cloud, version control, and supporting tools.",
     skills: [
-      { name: ".NET", color: "#512bd4", icon: "fas fa-code", progress: 85 },
-      { name: "Laravel", color: "#FF2D20", icon: "fab fa-laravel", progress: 75 },
-      { name: "Java", color: "#f89820", icon: "fab fa-java", progress: 65 },
-      { name: "FastAPI", color: "#009688", icon: "fas fa-bolt", progress: 70 },
+      { name: "Git / GitHub", color: "#f1502f", icon: "fab fa-git-alt", progress: 80 },
+      { name: "DigitalOcean", color: "#0080FF", icon: "fas fa-cloud", progress: 75 },
+      { name: "CI/CD", color: "#34d058", icon: "fas fa-cogs", progress: 70 },
       { name: "Docker", color: "#0db7ed", icon: "fab fa-docker", progress: 65 },
+      { name: "Nginx / PHP-FPM", color: "#009639", icon: "fas fa-server", progress: 70 },
+      { name: "Node.js", color: "#68a063", icon: "fab fa-node-js", progress: 70 },
+      { name: "FastAPI", color: "#009688", icon: "fas fa-bolt", progress: 65 },
       { name: "Azure", color: "#0089d6", icon: "fas fa-cloud", progress: 60 },
-      { name: "Google Cloud", color: "#ea4335", icon: "fas fa-cloud", progress: 55 },
-      { name: "Node.js / Express", color: "#68a063", icon: "fab fa-node-js", progress: 75 },
-      { name: "CI/CD Pipeline", color: "#34d058", icon: "fas fa-cogs", progress: 60 },
-    ],
-  },
-  {
-    title: "Data & Tools",
-    description: "Working with databases, version control, automation, and supporting tools.",
-    skills: [
-      { name: "Git", color: "#f1502f", icon: "fab fa-git-alt", progress: 80 },
-      { name: "GitHub", color: "#111827", icon: "fab fa-github", progress: 80 },
-      { name: "SQLite", color: "#003b57", icon: "fas fa-database", progress: 70 },
-      { name: "MySQL", color: "#00758f", icon: "fas fa-database", progress: 75 },
-      { name: "SSMS", color: "#ff6c00", icon: "fas fa-server", progress: 70 },
-      { name: "Unit Testing", color: "#ffcc00", icon: "fas fa-vial", progress: 50 },
-      { name: "Supabase", color: "#3ecf8e", icon: "fas fa-database", progress: 60 },
-      { name: "n8n", color: "#ff6f61", icon: "fas fa-project-diagram", progress: 55 },
-      { name: "GraphQL", color: "#e535ab", icon: "fas fa-share-alt", progress: 50 },
     ],
   },
 ];
 
 const stats = [
-  { label: "Projects Built", value: "6" },
-  { label: "Live Platforms", value: "2" },
+  { label: "Laravel Apps", value: "4+" },
+  { label: "Live Platforms", value: "3" },
   { label: "Work Experiences", value: "3" },
 ];
 
@@ -62,8 +60,8 @@ const Skills = () => {
             <p className="skills-eyebrow">Capabilities</p>
             <h2 className="skills-title">Skills & Tools</h2>
             <p className="skills-intro">
-              A working stack centered on backend engineering, web application
-              development, cloud deployment, and database-driven systems.
+              A Full Stack Laravel stack — PHP, Livewire, MySQL, queues, and
+              deploys — plus the frontend and cloud tools that ship real products.
             </p>
           </div>
 

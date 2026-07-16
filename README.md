@@ -1,7 +1,7 @@
-# Arnieque Amaba — Developer Portfolio
+# Arnieque Amaba — Full Stack Laravel Developer Portfolio
 
-A single-page personal portfolio for **Arnieque Amaba**, a Backend / Full-Stack Developer.
-Built with React and Vite, showcasing projects, experience, skills, and a contact form.
+A single-page personal portfolio for **Arnieque Amaba**, a Full Stack Laravel Developer.
+Built with React and Vite, showcasing Laravel production work, experience, skills, and a contact form.
 
 ## Tech Stack
 
