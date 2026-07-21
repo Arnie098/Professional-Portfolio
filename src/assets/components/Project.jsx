@@ -28,14 +28,20 @@ import suretrackDashboardTwo from "../../../Projects/suretrack-dashboard2.png";
 import suretrackOrders from "../../../Projects/suretrack-orders.png";
 import suretrackSpecs from "../../../Projects/suretrack-product-specs.png";
 import suretrackReports from "../../../Projects/suretrack-reports.png";
-import ncipLanding from "../../../Projects/ncip-langdingpage.png";
-import ncipModules from "../../../Projects/ncip-modules.png";
-import ncipCensusMasterlist from "../../../Projects/ncip-census-masterlist.png";
-import ncipCensusConsolidation from "../../../Projects/ncip-census-consolidation.png";
-import ncipDocs from "../../../Projects/ncip-docs.png";
-import ncipIpmr from "../../../Projects/ncip-ipmr.png";
-import ncipFpic from "../../../Projects/ncip-fpic.png";
-import ncipAudit from "../../../Projects/ncip-audit.png";
+import ncipHome from "../../../Projects/ncip-home.png";
+import ncipHome1 from "../../../Projects/ncip-home1.png";
+import ncipDocumentRegistry from "../../../Projects/ncip-document-registry.png";
+import ncipIpCensus from "../../../Projects/ncip-ip-census.png";
+import ncipDocumentList from "../../../Projects/ncip-document-list.png";
+import ncipDocuments from "../../../Projects/ncip-documents.png";
+import ncipIpmrList from "../../../Projects/ncip-ipmr-list.png";
+import ncipIpmrMap from "../../../Projects/ncip-ipmr-map.png";
+import ncipFpicCase from "../../../Projects/ncip-fpic-case.png";
+import docutrustHome from "../../../Projects/docutrust-home.png";
+import docutrustDashboard from "../../../Projects/docutrust-dashboard.png";
+import docutrustSignature from "../../../Projects/docutrust-signature.png";
+import docutrustSigned from "../../../Projects/docutrust-signed.png";
+import docutrustVideocall from "../../../Projects/docutrust-videocall.png";
 
 const projects = [
   {
@@ -102,14 +108,15 @@ const projects = [
       "An internal records and case management platform powered by a hybrid blockchain for tamper-evident records, secured with an Attribute-Based Access Control (ABAC) framework for fine-grained, policy-driven permissions. Includes modules for IP census, document registry, IPMR tracking, FPIC workflows, audit logs, and administrative documentation.",
     stack: "Laravel 12, Inertia.js, React + TypeScript, Tailwind CSS, Solidity/Hardhat, ethers.js, Leaflet, MySQL",
     images: [
-      ncipLanding,
-      ncipModules,
-      ncipCensusMasterlist,
-      ncipCensusConsolidation,
-      ncipDocs,
-      ncipIpmr,
-      ncipFpic,
-      ncipAudit,
+      ncipHome,
+      ncipHome1,
+      ncipDocumentRegistry,
+      ncipIpCensus,
+      ncipDocumentList,
+      ncipDocuments,
+      ncipIpmrList,
+      ncipIpmrMap,
+      ncipFpicCase,
     ],
     status: "Internal System",
   },
@@ -118,7 +125,13 @@ const projects = [
     description:
       "A document e-signature and notarization platform built on Laravel 12, anchoring completed document hashes to the Polygon blockchain for tamper-proof verification. Includes queue-based PDF sealing, certificate generation, two-factor authentication, and e-invoicing.",
     stack: "Laravel 12, Livewire, Solidity/Hardhat (Polygon), Node.js/ethers.js, Redis, MySQL, dompdf/FPDI",
-    images: [],
+    images: [
+      docutrustHome,
+      docutrustDashboard,
+      docutrustSignature,
+      docutrustSigned,
+      docutrustVideocall,
+    ],
     link: "https://sign.docutrust.tech",
   },
 ];
